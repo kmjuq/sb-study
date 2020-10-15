@@ -1,0 +1,3 @@
+[submodule "start.spring.io"]
+	path = start.spring.io
+	url = https://github.com/mengjian-ke/start.spring.io.git
