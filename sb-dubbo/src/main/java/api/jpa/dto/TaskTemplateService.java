@@ -1,6 +1,6 @@
-package api.jpa;
+package api.jpa.dto;
 
-import api.jpa.dto.TaskTemplateCol;
+import java.util.List;
 
 public interface TaskTemplateService {
 
@@ -11,5 +11,7 @@ public interface TaskTemplateService {
     TaskTemplateCol save(TaskTemplateCol ttlc);
 
     void deleteByTemplateColId(Long id);
+
+    String dubboHello(String name);
 
 }

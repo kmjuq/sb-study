@@ -1,0 +1,38 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  profiles:
+    include: jpa-hibernate
+  datasource:
+    # mysql
+    # driver-class-name: com.mysql.cj.jdbc.Driver
+    # url: jdbc:mysql://localhost/jpa?useSSL=true&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT
+    username: kmj
+    initialization-mode: ALWAYS
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://127.0.0.1:5432/sb
+
+
+logging:
+  level:
+    root: debug
+
+dubbo:
+  application:
+    name: jpa-provider
+  registry:
+    address: zookeeper://localhost:2181
+  scan:
+    base-packages: com.study.jpa.provider
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+mybatis:
+  mapper-locations: classpath:mapper/**/*Mapper.xml

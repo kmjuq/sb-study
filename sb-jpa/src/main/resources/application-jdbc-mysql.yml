@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    schema: classpath*:schema-mysql.sql
+    data: classpath*:data-mysql.sql
+    platform: mysql

@@ -1,11 +1,11 @@
 package com.study.jpa.repository;
 
-import com.study.jpa.domain.TaskTemplateCol;
+import com.study.jpa.domain.TaskTemplateDefine;
 import org.apache.ibatis.annotations.Mapper;
 
-import java.util.Optional;
+import javax.annotation.Resource;
 
-/**
+/**å
  * <p>
  *
  * </p>
@@ -15,6 +15,6 @@ import java.util.Optional;
 @Mapper
 public interface TaskTemplateDefineMapper {
 
-    Optional<TaskTemplateCol> findByTemplateColId(Long id);
+    TaskTemplateDefine findById(Long id);
 
 }
