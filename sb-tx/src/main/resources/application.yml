@@ -7,14 +7,21 @@ logging:
   level:
     root: debug
 
-dubbo:
-  application:
-    id: dubbo-provider
-    name: dubbo-provider
-  protocol:
-    id: dubbo
-    name: dubbo
-    port: 20881
-  registry:
-    id: dubbo-provider-registry
-    address: zookeeper://localhost:2181
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+
+  datasource:
+    username: kmj
+    initialization-mode: ALWAYS
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://127.0.0.1:5432/sb

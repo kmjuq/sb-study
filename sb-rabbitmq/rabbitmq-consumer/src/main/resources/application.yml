@@ -1,0 +1,6 @@
+
+spring:
+  rabbitmq:
+    virtual-host: /kmj
+    username: kmj
+    password: 123

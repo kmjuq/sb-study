@@ -20,14 +20,6 @@ logging:
   level:
     root: debug
 
-dubbo:
-  application:
-    name: jpa-provider
-  registry:
-    address: zookeeper://localhost:2181
-  scan:
-    base-packages: com.study.jpa.provider
-
 management:
   endpoints:
     web:
@@ -36,3 +28,8 @@ management:
 
 mybatis:
   mapper-locations: classpath:mapper/**/*Mapper.xml
+
+ke:
+  config:
+    first-name: long
+    last-name: ming
