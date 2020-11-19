@@ -26,6 +26,7 @@
         <module>sb-mds</module>
         <module>sb-rabbitmq</module>
         <module>sb-redis</module>
+        <module>boot-base</module>
     </modules>
 
     <dependencyManagement>

@@ -1,3 +1,6 @@
 [submodule "start.spring.io"]
 	path = start.spring.io
-	url = https://github.com/mengjian-ke/start.spring.io.git
+	url = https://github.com/kmjuq/start.spring.io.git
+[submodule "boot-base"]
+	path = boot-base
+	url = https://github.com/kmjuq/boot-base.git
